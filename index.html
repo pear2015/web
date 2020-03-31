@@ -1,0 +1,131 @@
+<html>
+
+<head></head>
+<style>
+    .main {
+        width: 800px;
+        height: 500px;
+        background-color: burlywood;
+        /* position: relative; */
+    }
+
+    .video {
+        height: 100%;
+        /* left: 0; */
+        /* position: absolute; */
+        /* right: 0; */
+        /* top: 0; */
+        /* bottom: 0; */
+        background-color: #ed64d9;
+    }
+
+    .one_content {
+        position: relative;
+        left: 0;
+        /* right: 0; */
+        /* bottom: 0; */
+        background-color: aqua;
+        width: 100%;
+        height: 100%;
+    }
+
+    .display {
+        position: absolute;
+        /* top: 0; */
+        /* left: 0; */
+        /* right: 0; */
+        bottom: 0;
+        height: 100px;
+        background-color: rgb(110, 106, 107);
+        width: 100%;
+    }
+
+    .wide {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        overflow: hidden;
+        z-index: 1;
+    }
+
+    .controll {
+        /* position: absolute; */
+        /* left: 0; */
+        /* right: 0; */
+        /* bottom: 0; */
+        /* height: 100px; */
+        /* z-index: 2; */
+        /* background-color: blueviolet; */
+    }
+
+    .other {
+        width: 500px;
+        height: 600px;
+        /* position: relative; */
+    }
+
+    .other_content {
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+    }
+
+    .one {
+        position: relative;
+        width: 7.25333rem;
+        height: 4.52267rem;
+        overflow: hidden;
+        border-radius: .17067rem;
+        background-image: url(//s1.hdslb.com/bfs/static/mult/images/tv.png);
+        background-position: .93867rem 0;
+        background-size: 3.2rem 3.2rem;
+        background-repeat: no-repeat;
+        background-color: burlywood;
+        border: burlywood;
+    }
+</style>
+<script>
+    function test(){
+        document.getElementById('video').setAttribute('class','one_content wide');
+    }
+    function test1(){
+        document.getElementById('video').setAttribute('class','one_content');
+    }
+</script>
+
+<body>
+    <div class="main">
+        <div class="one_content" id="video">
+            <!-- <video preload="metadata" width="100%" height="100%" webkit-playsinline="" playsinline="" class="show" style="display: inline;">
+                    <source src="https://www.w3school.com.cn/i/movie.ogg" type="video/mp4"></video> -->
+            <div class="video"></div>
+            <div class="display">
+                <div class="controll">
+                    <input type="button" value="测试1" onclick="test()">
+                    <input type="button" value="测试2" onclick="test1()">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="other">
+        <div class="other_content">
+            <div class="one">
+                <span>
+                    第一段
+                </span>
+            </div>
+            <div class="one">
+                <span>
+                    第二段
+                </span>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
