@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<style>
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .item-title {
+        font-size: 20px;
+        color: blue;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .item-content-column {
+        flex-direction: column;
+    }
+
+    .item-content-column-reverse {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .item-content-row {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .item-content-row-reverse {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+
+
+    .flex-item {
+        height: 30px;
+        width: 30px;
+        padding: 20px;
+        background-color: antiquewhite;
+        margin-left: 10px;
+        margin-bottom: 10px
+    }
+</style>
+
+
+<body>
+    <div class="container">
+        <div class="item-title">
+            <span>flex布局设置display=flex</span>
+            <span>flex-direction的值有：row、column、column-reverse、row-reverse</span>
+        </div>
+        <div class="item-title">
+            <span>1、flex-direction: column;</span>
+            <span>依次从上往下排，页面显示正序 1>2>3 </span>
+        </div>
+        <div class="item-content-column">
+            <div class="flex-item">
+                <span> 1</span>
+            </div>
+            <div class="flex-item">
+                <span> 2</span>
+            </div>
+            <div class="flex-item">
+                <span> 3</span>
+            </div>
+        </div>
+        <div class="item-title">
+            <span>2、flex-direction: row;</span>
+            <span>依次从左像右排，页面显示正序 1>2>3 </span>
+        </div>
+        <div class="item-content-row">
+            <div class="flex-item">
+                <span> 1</span>
+            </div>
+            <div class="flex-item">
+                <span> 2</span>
+            </div>
+            <div class="flex-item">
+                <span> 3</span>
+            </div>
+
+        </div>
+        <div class="item-title">
+            <span>3、flex-direction: column-reverse</span>
+            <span>依次从下往上排，页面显示倒序 3>2>1 </span>
+        </div>
+        <div class="item-content-column-reverse">
+            <div class="flex-item">
+                <span> 1</span>
+            </div>
+            <div class="flex-item">
+                <span> 2</span>
+            </div>
+            <div class="flex-item">
+                <span> 3</span>
+            </div>
+        </div>
+        <div class="item-title">
+            <span>4、flex-direction: row-reverse; </span>
+            <span>依次从右向左排页面显示 2>1 </span>
+
+        </div>
+        <div class="item-content-row-reverse">
+            <div class="flex-item">
+                <span> 1</span>
+            </div>
+            <div class="flex-item">
+                <span> 2</span>
+            </div>
+            <div class="flex-item">
+                <span> 3</span>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
