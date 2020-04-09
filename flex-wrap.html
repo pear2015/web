@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .flex-wrap1 {
+        display: flex;
+        flex-wrap: nowrap;
+        width: 400px;
+        height: 300px;
+    }
+
+    .flex-wrap2 {
+        display: flex;
+        flex-wrap: wrap;
+        width: 400px;
+        height: 300px;
+    }
+
+    .flex-wrap3 {
+        display: flex;
+        flex-wrap: wrap-reverse;
+        width: 400px;
+        height: 300px;
+    }
+
+    .flex-wrap4 {
+        display: flex;
+        flex-wrap: wrap;
+        width: 400px;
+        height: 300px;
+    }
+
+    .item {
+        width: 30px;
+        height: 30px;
+        background-color: aqua;
+        font-size: 20px;
+        margin: 10px;
+    }
+
+    .item1 {
+        width: 10px;
+        height: 20px;
+        background-color: blueviolet;
+        font-size: 20px;
+        margin: 10px;
+    }
+
+    .item2 {
+        width: 40px;
+        height: 40px;
+        background-color: brown;
+        font-size: 20px;
+        margin: 10px;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div style="font-size: 24px; display: flex;flex-direction: column">
+            <span style="justify-items: center">flex-wrap值类型：</span>
+            <span> nowrap （默认）：所有弹性项目都将在一行上</span>
+            <span> wrap：弹性项目将从上到下缠绕在多行上。</span>
+            <span> wrap-reverse：弹性项目将从下到上缠绕在多行上。
+            </span>
+        </div>
+        <span style="color:red"> nowrap （默认）：所有弹性项目都将在一行上</span>
+        <div class="flex-wrap1">
+
+            <div class="item">
+                <span>1</span>
+            </div>
+            <div class="item1">
+                <span>2</span>
+            </div>
+            <div class="item">
+                <span>3</span>
+            </div>
+            <div class="item1">
+                <span>4</span>
+            </div>
+            <div class="item">
+                <span>5</span>
+            </div>
+            <div class="item2">
+                <span>6</span>
+            </div>
+            <div class="item1">
+                <span>7</span>
+            </div>
+            <div class="item">
+                <span>8</span>
+            </div>
+            <div class="item1">
+                <span>9</span>
+            </div>
+            <div class="item2">
+                <span>10</span>
+            </div>
+            <div class="item">
+                <span>11</span>
+            </div>
+            <div class="item1">
+                <span>12</span>
+            </div>
+            <div class="item">
+                <span>13</span>
+            </div>
+            <div class="item2">
+                <span>14</span>
+            </div>
+        </div>
+        <span style="color: red"> wrap：弹性项目将从上到下缠绕在多行上。</span>
+        <div class="flex-wrap2">
+            <div class="item">
+                <span>1</span>
+            </div>
+            <div class="item1">
+                <span>2</span>
+            </div>
+            <div class="item">
+                <span>3</span>
+            </div>
+            <div class="item1">
+                <span>4</span>
+            </div>
+            <div class="item">
+                <span>5</span>
+            </div>
+            <div class="item2">
+                <span>6</span>
+            </div>
+            <div class="item1">
+                <span>7</span>
+            </div>
+            <div class="item">
+                <span>8</span>
+            </div>
+            <div class="item1">
+                <span>9</span>
+            </div>
+            <div class="item2">
+                <span>10</span>
+            </div>
+            <div class="item">
+                <span>11</span>
+            </div>
+            <div class="item1">
+                <span>12</span>
+            </div>
+            <div class="item">
+                <span>13</span>
+            </div>
+            <div class="item2">
+                <span>14</span>
+            </div>
+        </div>
+        <span style="color: red"> wrap-reverse：弹性项目将从下到上缠绕在多行上。</span>
+        <div class="flex-wrap3">
+            <div class="item">
+                <span>1</span>
+            </div>
+            <div class="item1">
+                <span>2</span>
+            </div>
+            <div class="item">
+                <span>3</span>
+            </div>
+            <div class="item1">
+                <span>4</span>
+            </div>
+            <div class="item">
+                <span>5</span>
+            </div>
+            <div class="item2">
+                <span>6</span>
+            </div>
+            <div class="item1">
+                <span>7</span>
+            </div>
+            <div class="item">
+                <span>8</span>
+            </div>
+            <div class="item1">
+                <span>9</span>
+            </div>
+            <div class="item2">
+                <span>10</span>
+            </div>
+            <div class="item">
+                <span>11</span>
+            </div>
+            <div class="item1">
+                <span>12</span>
+            </div>
+            <div class="item">
+                <span>13</span>
+            </div>
+            <div class="item2">
+                <span>14</span>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
