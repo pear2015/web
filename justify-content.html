@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    .container {
+        display: flex;
+        flex-direction: column;
+        width: 600px;
+        justify-content:center;
+        margin-left: 200px;
+    }
+
+    .page-title {
+        font-size: 20px;
+        color: red;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .justify-content1 {
+        display: flex;
+        justify-content: flex-start;
+        border:1px solid rgb(126, 146, 165) ;
+    }
+
+    .justify-content2 {
+        display: flex;
+        justify-content: start;
+        border:1px solid rgb(126, 146, 165) ;
+    }
+    .justify-content3 {
+        display: flex;
+        justify-content:flex-end;
+        border:1px solid rgb(126, 146, 165) ;
+    }
+    .justify-content4 {
+        display: flex;
+        justify-content:end;
+        border:1px solid rgb(126, 146, 165) ;
+    }
+    .justify-content5 {
+        display: flex;
+        justify-content:center;
+        border:1px solid rgb(126, 146, 165) ;
+    }
+    .justify-content6 {
+        display: flex;
+        justify-content:space-between;
+        border:1px solid rgb(126, 146, 165) ;
+    }
+    .justify-content7 {
+        display: flex;
+        justify-content:space-around;
+        border:1px solid rgb(126, 146, 165) ;
+    }
+    .justify-content8 {
+        display: flex;
+        justify-content:space-evenly;
+        border:1px solid rgb(126, 146, 165) ;
+    }
+    .item {
+        width: 30px;
+        height: 30px;
+        font-size: 20px;
+        color: blue;
+        background-color: aqua;
+    }
+
+    .item1 {
+        width: 30px;
+        height: 30px;
+        font-size: 20px;
+        color:rgb(1, 1, 1);
+        background-color: rgb(192, 30, 57);
+    }
+</style>
+
+
+<body>
+    <div class="container">
+        <div class="page-title">
+            justify-content 值类型：(以横轴对齐)
+            <span> flex-start （默认）：物品在弹性方向的开始方向打包。</span>
+            <span> flex-end：项目在伸缩方向的末端打包。</span>
+            <span> start：物品被包装到方向的起点writing-mode。</span>
+            <span> end：物品在方向的末端被包装writing-mode。</span>
+            <span> left：项目朝容器的左边缘包装，除非对而言没有意义flex-direction，则其行为类似于start。</span>
+            <span> right：：物品会朝着容器的右边缘包装，除非对而言没有意义flex-direction，则其行为类似于start。</span>
+            <span> center：项目沿线居中</span>
+            <span> space-between：两端对齐，项目之间的间隔都相等。</span>
+            <span> space-around：项目在行中均匀分布，并且周围有相等的空间。请注意，从视觉上看，空间是不相等的，因为所有项目的两侧都具有相等的空间。
+                第一项相对于容器边缘有一个单位的空间，但是下一项之间有两个单位的空间，因为下一项具有自己的适用间距。</span>
+            space-evenly：分配项目，以使任意两个项目之间的间距（以及到边缘的间距）相等。</span>
+            <!-- <image src="./justify-content.png" style="height: 400px;width:420px"></image> -->
+        </div>
+        <span>justify-content:flex-start</span>
+        <div class="justify-content1">
+            <div class="item">
+                <span>1</span>
+            </div>
+            <div class="item1">
+                <span>2</span>
+            </div>
+            <div class="item">
+                <span>3</span>
+            </div>
+        </div>
+        <span>justify-content:start</span>
+        <div class="justify-content2">
+            <div class="item">
+                <span>1</span>
+            </div>
+            <div class="item1">
+                <span>2</span>
+            </div>
+            <div class="item">
+                <span>3</span>
+            </div>
+        </div>
+
+
+        <span>justify-content:flex-end</span>
+        <div class="justify-content3">
+            <div class="item">
+                <span>1</span>
+            </div>
+            <div class="item1">
+                <span>2</span>
+            </div>
+            <div class="item">
+                <span>3</span>
+            </div>
+        </div>
+        <span>justify-content:end</span>
+        <div class="justify-content4">
+            <div class="item">
+                <span>1</span>
+            </div>
+            <div class="item1">
+                <span>2</span>
+            </div>
+            <div class="item">
+                <span>3</span>
+            </div>
+        </div>
+        <span>justify-content:center</span>
+        <div class="justify-content5">
+            <div class="item">
+                <span>1</span>
+            </div>
+            <div class="item1">
+                <span>2</span>
+            </div>
+            <div class="item">
+                <span>3</span>
+            </div>
+        </div>
+        <span>justify-content:space-between</span>
+        <div class="justify-content6">
+            <div class="item">
+                <span>1</span>
+            </div>
+            <div class="item1">
+                <span>2</span>
+            </div>
+            <div class="item">
+                <span>3</span>
+            </div>
+        </div>
+        <span>justify-content:space-around</span>
+        <div class="justify-content7">
+            <div class="item">
+                <span>1</span>
+            </div>
+            <div class="item1">
+                <span>2</span>
+            </div>
+            <div class="item">
+                <span>3</span>
+            </div>
+        </div>
+        <span>justify-content:space-evenly</span>
+        <div class="justify-content8">
+            <div class="item">
+                <span>1</span>
+            </div>
+            <div class="item1">
+                <span>2</span>
+            </div>
+            <div class="item">
+                <span>3</span>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
