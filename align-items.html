@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    .item {
+        width: 30px;
+        height: 30px;
+        font-size: 20px;
+        color: blue;
+        background-color: aqua;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        width: 600px;
+        justify-content: center;
+        margin-left: 200px;
+    }
+
+    .page-title {
+        font-size: 20px;
+        color: red;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .align-items1 {
+        display: flex;
+        align-items:stretch;
+        border: 1px solid rgb(126, 146, 165);
+        width: 700px;
+        height: 100px;
+    }
+
+    .align-items2 {
+        display: flex;
+        align-items: flex-start;
+        border: 1px solid rgb(126, 146, 165);
+        width: 700px;
+        height: 100px;
+    }
+
+    .align-items3 {
+        display: flex;
+        align-items: start;
+        border: 1px solid rgb(126, 146, 165);
+        width: 700px;
+        height: 100px;
+
+    }
+
+    .align-items4 {
+        display: flex;
+        align-items: flex-end;
+        border: 1px solid rgb(126, 146, 165);
+        width: 700px;
+        height: 100px;
+
+    }
+
+    .align-items5 {
+        display: flex;
+        align-items: end;
+        border: 1px solid rgb(126, 146, 165);
+        width: 700px;
+        height: 100px;
+    }
+
+    .align-items6 {
+        display: flex;
+        align-items: center;
+        border: 1px solid rgb(126, 146, 165);
+        width: 700px;
+        height: 100px;
+    }
+
+    .align-items7 {
+        display: flex;
+        align-items: baseline;
+        border: 1px solid rgb(126, 146, 165);
+        width: 700px;
+        height: 100px;
+    }
+
+    .item {
+        width: 60px;
+        height: 30px;
+        font-size: 20px;
+        color: blue;
+        background-color: aqua;
+    }
+
+    .item1 {
+        width: 50px;
+        height: 40px;
+        font-size: 20px;
+        color: rgb(1, 1, 1);
+        background-color: rgb(192, 30, 57);
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="page-title">
+            align-items的值类型：
+            <span> stretch （默认）：拉伸以填充容器（仍然遵守最小宽度/最大宽度） </span>
+            <span> flex-start/ start/ self-start：项目放置在十字轴的起点。这些之间的区别是微妙的，并且是关于flex-direction遵守规则或writing-mode规则的。
+            </span>
+            <span> flex-end/ end/ self-end：项目放置在十字轴的末端。差异再次是微妙的，涉及尊重flex-direction规则与writing-mode规则。 </span>
+            <span> center：项目在横轴上居中 </span>
+            <span> baseline：项目对齐，例如基线对齐
+            </span>
+        </div>
+        <span>
+            align-items=stretch
+        </span>
+        <div class="align-items1">
+            <div class="item">
+                <span>1</span>
+            </div>
+            <div class="item1">
+                <span>2</span>
+            </div>
+            <div class="item">
+                <span>3</span>
+            </div>
+            <div class="item">
+                <span>4</span>
+            </div>
+            <div class="item1">
+                <span>5</span>
+            </div>
+            <div class="item">
+                <span>6</span>
+            </div>
+            <div class="item">
+                <span>7</span>
+            </div>
+            <div class="item1">
+                <span>8</span>
+            </div>
+            <div class="item">
+                <span>9</span>
+            </div>
+        </div>
+        <span>
+            align-items=flex-start
+        </span>
+        <div class="align-items2">
+            <div class="item">
+                <span>1</span>
+            </div>
+            <div class="item1">
+                <span>2</span>
+            </div>
+            <div class="item">
+                <span>3</span>
+            </div>
+            <div class="item">
+                <span>4</span>
+            </div>
+            <div class="item1">
+                <span>5</span>
+            </div>
+            <div class="item">
+                <span>6</span>
+            </div>
+            <div class="item">
+                <span>7</span>
+            </div>
+            <div class="item1">
+                <span>8</span>
+            </div>
+            <div class="item">
+                <span>9</span>
+            </div>
+        </div>
+        <span>
+            align-items=start
+        </span>
+        <div class="align-items3">
+            <div class="item">
+                <span>1</span>
+            </div>
+            <div class="item1">
+                <span>2</span>
+            </div>
+            <div class="item">
+                <span>3</span>
+            </div>
+            <div class="item">
+                <span>4</span>
+            </div>
+            <div class="item1">
+                <span>5</span>
+            </div>
+            <div class="item">
+                <span>6</span>
+            </div>
+            <div class="item">
+                <span>7</span>
+            </div>
+            <div class="item1">
+                <span>8</span>
+            </div>
+            <div class="item">
+                <span>9</span>
+            </div>
+        </div>
+        <span>
+            align-items=flex-end
+        </span>
+        <div class="align-items4">
+            <div class="item">
+                <span>1</span>
+            </div>
+            <div class="item1">
+                <span>2</span>
+            </div>
+            <div class="item">
+                <span>3</span>
+            </div>
+            <div class="item">
+                <span>4</span>
+            </div>
+            <div class="item1">
+                <span>5</span>
+            </div>
+            <div class="item">
+                <span>6</span>
+            </div>
+            <div class="item">
+                <span>7</span>
+            </div>
+            <div class="item1">
+                <span>8</span>
+            </div>
+            <div class="item">
+                <span>9</span>
+            </div>
+        </div>
+        <span>
+            align-items=end
+        </span>
+        <div class="align-items5">
+            <div class="item">
+                <span>1</span>
+            </div>
+            <div class="item1">
+                <span>2</span>
+            </div>
+            <div class="item">
+                <span>3</span>
+            </div>
+            <div class="item">
+                <span>4</span>
+            </div>
+            <div class="item1">
+                <span>5</span>
+            </div>
+            <div class="item">
+                <span>6</span>
+            </div>
+            <div class="item">
+                <span>7</span>
+            </div>
+            <div class="item1">
+                <span>8</span>
+            </div>
+            <div class="item">
+                <span>9</span>
+            </div>
+        </div>
+        <span>
+            align-items=center
+        </span>
+        <div class="align-items6">
+            <div class="item">
+                <span>1</span>
+            </div>
+            <div class="item1">
+                <span>2</span>
+            </div>
+            <div class="item">
+                <span>3</span>
+            </div>
+            <div class="item">
+                <span>4</span>
+            </div>
+            <div class="item1">
+                <span>5</span>
+            </div>
+            <div class="item">
+                <span>6</span>
+            </div>
+            <div class="item">
+                <span>7</span>
+            </div>
+            <div class="item1">
+                <span>8</span>
+            </div>
+            <div class="item">
+                <span>9</span>
+            </div>
+        </div>
+        <span>
+            align-items=baseline
+        </span>
+        <div class="align-items7">
+            <div class="item">
+                <span>1</span>
+            </div>
+            <div class="item1">
+                <span>2</span>
+            </div>
+            <div class="item">
+                <span>3</span>
+            </div>
+            <div class="item">
+                <span>4</span>
+            </div>
+            <div class="item1">
+                <span>5</span>
+            </div>
+            <div class="item">
+                <span>6</span>
+            </div>
+            <div class="item">
+                <span>7</span>
+            </div>
+            <div class="item1">
+                <span>8</span>
+            </div>
+            <div class="item">
+                <span>9</span>
+            </div>
+        </div>
+        <!-- <span>
+            align-items=baseline
+        </span>
+        <div class="justify-item8">
+            <div class="item">
+                <span>1</span>
+            </div>
+            <div class="item1">
+                <span>2</span>
+            </div>
+            <div class="item">
+                <span>3</span>
+            </div>
+        </div> -->
+    </div>
+</body>
+
+</html>
