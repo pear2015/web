@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    .item {
+        width: 30px;
+        height: 30px;
+        font-size: 20px;
+        color: blue;
+        background-color: aqua;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        width: 600px;
+        justify-content: center;
+        margin-left: 200px;
+    }
+
+    .page-title {
+        font-size: 20px;
+        color: red;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .align-content1 {
+        display: flex;
+        align-content: flex-start;
+        border: 1px solid rgb(126, 146, 165);
+        flex-wrap:wrap;
+        width: 500px;
+        height: 200px;
+    }
+
+    .align-content2 {
+        display: flex;
+        flex-wrap:wrap;
+        align-content: start;
+        border: 1px solid rgb(126, 146, 165);
+        flex-wrap:wrap;
+        width: 500px;
+        height: 200px;
+    }
+
+    .align-content3 {
+        display: flex;
+        align-content: flex-end;
+        border: 1px solid rgb(126, 146, 165);
+        flex-wrap:wrap;
+        width: 500px;
+        height: 200px;
+
+    }
+
+    .align-content4 {
+        display: flex;
+        align-content: end;
+        border: 1px solid rgb(126, 146, 165);
+        flex-wrap:wrap;
+        width: 500px;
+        height: 200px;
+
+    }
+
+    .align-content5 {
+        display: flex;
+        align-content: center;
+        border: 1px solid rgb(126, 146, 165);
+        flex-wrap:wrap;
+        width: 500px;
+        height: 200px;
+    }
+
+    .align-content6 {
+        display: flex;
+        align-content: space-between;
+        border: 1px solid rgb(126, 146, 165);
+        flex-wrap:wrap;
+        width: 500px;
+        height: 200px;
+    }
+
+    .align-content7 {
+        display: flex;
+        align-content: space-around;
+        border: 1px solid rgb(126, 146, 165);
+        flex-wrap:wrap;
+        width: 500px;
+        height: 200px;
+    }
+    .align-content8 {
+        display: flex;
+        align-content:space-evenly;
+        border: 1px solid rgb(126, 146, 165);
+        flex-wrap:wrap;
+        width: 500px;
+        height: 200px;
+    }
+
+    .item {
+        width: 60px;
+        height: 50px;
+        font-size: 20px;
+        color: blue;
+        background-color: aqua;
+    }
+
+    .item1 {
+        width: 80px;
+        height: 40px;
+        font-size: 20px;
+        color: rgb(1, 1, 1);
+        background-color: rgb(192, 30, 57);
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="page-title">
+            <span> align-content的值类型：当在横轴上有多余的空间时，这会将弹性容器的线对齐在内部，类似于justify-content在主轴内对齐单个项目的方式。</span>
+            <span> flex-start/ start：包装到容器开头的项目。（获得更多支持）flex-start尊重方向，flex-direction同时start尊重writing-mode方向。</span>
+            <span> flex-end/ end：包装在容器末端的物品。（更多支持）flex-end兑现，flex-direction而终点兑现writing-mode方向。</span>
+            <span> center：位于容器中心的项目</span>
+            <span> space-between：物品平均分配；第一行在容器的开头，而最后一行在容器的结尾</span>
+            <span> space-around：项目均匀分布在每行周围</span>
+            <span> space-evenly：项目均匀分布，周围有相等的空间</span>
+            <span> stretch （默认）：线拉伸以占据剩余空间</span>
+            </span>
+        </div>
+        <span>
+            align-content=flex-start
+        </span>
+        <div class="align-content1">
+            <div class="item">
+                <span>1</span>
+            </div>
+            <div class="item1">
+                <span>2</span>
+            </div>
+            <div class="item">
+                <span>3</span>
+            </div>
+            <div class="item">
+                <span>4</span>
+            </div>
+            <div class="item1">
+                <span>5</span>
+            </div>
+            <div class="item">
+                <span>6</span>
+            </div>
+            <div class="item">
+                <span>7</span>
+            </div>
+            <div class="item1">
+                <span>8</span>
+            </div>
+            <div class="item">
+                <span>9</span>
+            </div>
+        </div>
+        <span>
+            align-content=start
+        </span>
+        <div class="align-content2">
+            <div class="item">
+                <span>1</span>
+            </div>
+            <div class="item1">
+                <span>2</span>
+            </div>
+            <div class="item">
+                <span>3</span>
+            </div>
+            <div class="item">
+                <span>4</span>
+            </div>
+            <div class="item1">
+                <span>5</span>
+            </div>
+            <div class="item">
+                <span>6</span>
+            </div>
+            <div class="item">
+                <span>7</span>
+            </div>
+            <div class="item1">
+                <span>8</span>
+            </div>
+            <div class="item">
+                <span>9</span>
+            </div>
+        </div>
+        <span>
+            align-content=flex-end
+        </span>
+        <div class="align-content3">
+            <div class="item">
+                <span>1</span>
+            </div>
+            <div class="item1">
+                <span>2</span>
+            </div>
+            <div class="item">
+                <span>3</span>
+            </div>
+            <div class="item">
+                <span>4</span>
+            </div>
+            <div class="item1">
+                <span>5</span>
+            </div>
+            <div class="item">
+                <span>6</span>
+            </div>
+            <div class="item">
+                <span>7</span>
+            </div>
+            <div class="item1">
+                <span>8</span>
+            </div>
+            <div class="item">
+                <span>9</span>
+            </div>
+        </div>
+        <span>
+            align-content=end
+        </span>
+        <div class="align-content4">
+            <div class="item">
+                <span>1</span>
+            </div>
+            <div class="item1">
+                <span>2</span>
+            </div>
+            <div class="item">
+                <span>3</span>
+            </div>
+            <div class="item">
+                <span>4</span>
+            </div>
+            <div class="item1">
+                <span>5</span>
+            </div>
+            <div class="item">
+                <span>6</span>
+            </div>
+            <div class="item">
+                <span>7</span>
+            </div>
+            <div class="item1">
+                <span>8</span>
+            </div>
+            <div class="item">
+                <span>9</span>
+            </div>
+        </div>
+        <span>
+            align-content=center
+        </span>
+        <div class="align-content5">
+            <div class="item">
+                <span>1</span>
+            </div>
+            <div class="item1">
+                <span>2</span>
+            </div>
+            <div class="item">
+                <span>3</span>
+            </div>
+            <div class="item">
+                <span>4</span>
+            </div>
+            <div class="item1">
+                <span>5</span>
+            </div>
+            <div class="item">
+                <span>6</span>
+            </div>
+            <div class="item">
+                <span>7</span>
+            </div>
+            <div class="item1">
+                <span>8</span>
+            </div>
+            <div class="item">
+                <span>9</span>
+            </div>
+        </div>
+        <span>
+            align-content=space-between
+        </span>
+        <div class="align-content6">
+            <div class="item">
+                <span>1</span>
+            </div>
+            <div class="item1">
+                <span>2</span>
+            </div>
+            <div class="item">
+                <span>3</span>
+            </div>
+            <div class="item">
+                <span>4</span>
+            </div>
+            <div class="item1">
+                <span>5</span>
+            </div>
+            <div class="item">
+                <span>6</span>
+            </div>
+            <div class="item">
+                <span>7</span>
+            </div>
+            <div class="item1">
+                <span>8</span>
+            </div>
+            <div class="item">
+                <span>9</span>
+            </div>
+        </div>
+        <span>
+            align-content=space-around
+        </span>
+        <div class="align-content7">
+            <div class="item">
+                <span>1</span>
+            </div>
+            <div class="item1">
+                <span>2</span>
+            </div>
+            <div class="item">
+                <span>3</span>
+            </div>
+            <div class="item">
+                <span>4</span>
+            </div>
+            <div class="item1">
+                <span>5</span>
+            </div>
+            <div class="item">
+                <span>6</span>
+            </div>
+            <div class="item">
+                <span>7</span>
+            </div>
+            <div class="item1">
+                <span>8</span>
+            </div>
+            <div class="item">
+                <span>9</span>
+            </div>
+        </div>
+        <span>
+            align-content=space-evenly
+        </span>
+        <div class="align-content8">
+            <div class="item">
+                <span>1</span>
+            </div>
+            <div class="item1">
+                <span>2</span>
+            </div>
+            <div class="item">
+                <span>3</span>
+            </div>
+            <div class="item">
+                <span>4</span>
+            </div>
+            <div class="item1">
+                <span>5</span>
+            </div>
+            <div class="item">
+                <span>6</span>
+            </div>
+            <div class="item">
+                <span>7</span>
+            </div>
+            <div class="item1">
+                <span>8</span>
+            </div>
+            <div class="item">
+                <span>9</span>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
