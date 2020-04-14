@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<style>
+    .container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 600px;
+    }
+
+    .item-title {
+        font-size: 20px;
+        color: blue;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .item-content-column {
+        flex-direction: column;
+    }
+
+    .item-content-column-reverse {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .item-content-row {
+        display: flex;
+        flex-direction: row;
+    }
+
+
+
+    .flex-item {
+        height: 60px;
+        width: 60px;
+        padding: 20px;
+        background-color: antiquewhite;
+        margin-left: 10px;
+        margin-bottom: 10px
+
+    }
+</style>
+
+
+<body>
+    <div class="container">
+        <div class="item-title">
+            <span>order默认值为0，order值越大越排后</span>
+            <span> </span>
+        </div>
+        <div class="item-content-row">
+            <div class="flex-item" style="order:2">
+                <span> 1（order：2）</span>
+            </div>
+            <div class="flex-item">
+                <span> 2</span>
+            </div>
+            <div class="flex-item" style="order:1">
+                <span> 3（order：1）</span>
+            </div>
+            <div class="flex-item">
+                <span> 4</span>
+            </div>
+            <div class="flex-item">
+                <span> 5</span>
+            </div>
+            <div class="flex-item">
+                <span> 6</span>
+            </div>
+            <div class="flex-item">
+                <span> 7</span>
+            </div>
+            <div class="flex-item">
+                <span> 8</span>
+            </div>
+            <div class="flex-item">
+                <span> 9</span>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
