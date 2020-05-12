@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    height: 500px;
+    border: 1px solid #333333;
+    background-color: #dddddd;
+}
+
+#allBox {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    /* display: flex;
+    flex-direction: row; */
+    /* position: relative; */
+}
+
+.bigBox {
+    width: 500px;
+    height: 400px;
+    background: #ce1111;
+    
+    /* position: absolute; */
+}
+.smallBoxList {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 500px;
+    width: 2900px;
+}
+.smallIten {
+    width: 270px;
+    margin-left: 20px;
+    height: 196px;
+    border: 1px solid #2b2424;
+}
